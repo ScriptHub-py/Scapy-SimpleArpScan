@@ -1,0 +1,5 @@
+import scapy.all as scapy\n
+\n
+ip_range = f'{scapy.conf.route.route("0.0.0.0")[2]}/24'\n
+\n
+scapy.arping(ip_range,10)\n
